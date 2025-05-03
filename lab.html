@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Virtual Lab</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1>Virtual Lab - Watershed Segmentation</h1>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="theory.html">Theory</a>
+        <a href="lab.html">Virtual Lab</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+    <h2>Upload Image</h2>
+    <form action="http://localhost:5000/upload" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required><br>
+        <input type="submit" value="Segment Image">
+    </form>
+
+    <p><em>Note: Make sure your backend is running on port 5000 to process the image.</em></p>
+</div>
+
+<footer>
+    <p>&copy; 2025 Virtual Lab</p>
+</footer>
+</body>
+</html>

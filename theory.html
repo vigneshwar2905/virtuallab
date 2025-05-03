@@ -1,0 +1,24 @@
+<div class="container">
+    <h2>Watershed Image Segmentation</h2>
+
+    <div class="card">
+        <p>
+            The <strong>Watershed Algorithm</strong> is a region-based image segmentation technique inspired by topographic interpretation of grayscale images.
+            It views images as 3D terrains: the intensity value of each pixel acts like elevation.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Real-World Analogy</h3>
+        <p>
+            Imagine pouring water over a terrain with hills and valleys. The water flows into the nearest catchment basins.
+            Boundaries are formed where water from different basins would meet — these boundaries become the segmentation lines.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Steps Involved</h3>
+        <ul>
+            <li>Convert input image to grayscale</li>
+            <li>Apply noise removal techniques (e.g., morphological opening)</li>
+            <li>Use distance transform to identify foreground o
